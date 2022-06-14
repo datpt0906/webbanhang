@@ -78,13 +78,14 @@ function  addcart(productPrice,productImg,productName){
     for (var i=0; i<cartItem.length;i++){
       if( $(this).hasClass('disable') ){
         // alert("Sản Phẩm: " +tensp +' Giá: '+giasp+" đã có trong giỏ hàng")
+        alert("Sản phẩm của bạn đã tồn tại trong giỏ hàng")
         return false;
     }
     
     $(this).addClass('disable');
         var productT = document.querySelectorAll(".title")
         if(productT[i].innerHTML == productName){
-          alert("Sản Phẩm: " +productName +' Giá: '+productPrice+'đ'+" đã có trong giỏ hàng")
+          // alert("Sản Phẩm: " +productName +' Giá: '+productPrice+'đ'+" đã có trong giỏ hàng")
             // alert("Sản phẩm của bạn đã tồn tại trong giỏ hàng")
             return
         }
