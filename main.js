@@ -46,8 +46,8 @@ function thongbaopopup(){
             });
             setTimeout(function(){
                 $(document).find('.img-product').remove();
-               var citem=parseInt(cart.find('#count-item').data('count'))+1;
-               cart.find('#count-item').text (' '+citem).data('count',citem)
+              //  var citem=parseInt(cart.find('#count-item').data('count'))+1;
+              //  cart.find('#count-item').text (' '+citem).data('count',citem)
             },500)
           },500);
       });
@@ -110,36 +110,24 @@ function carttotal(){
        const bodauphay =productPrice.split(",");
        var bodauphay1 = document.querySelector(".price-total span").innerHTML = bodauphay;
       //console.log(productPrice)
+      var totalA = inputValue*productPrice,
+      //totalB = totalA.toLocaleString('de-DE')
+      //console.log(totalB)
+      totalC = totalC+totalA
       //totalD = totalC.toLocaleString('de-DE')
-      totalA = inputValue*productPrice*1000
-        //totalB = totalA.toLocaleString('de-DE')
-        //console.log(totalB)
-        totalC = totalC+totalA
       console.log(totalA)
       //console.log(totalC)
-     
+      
   }
   var cartTotalA = document.querySelector(".price-total span")
   //nâng cao
   //var cartPrice = document.querySelector(".cart-icon span")
-  bodauphay1.innerHTML = formattt.toLocaleString('de-DE') 
+  bodauphay1.innerHTML = totalC.toLocaleString('de-DE') 
   //nâng cao
   //cartPrice.innerHTML = totalC.toLocaleString('de-DE')
   inputchange()
   //console.log(cartTotalA)
 }
-
-
- // function format(x){
-      //   formattt = 0;
-      //   for(var i = 0; i < x.length - 1; i++){
-      //     formattt += Number(index[i] * (Math.pow(10,3), index.length -1 -i));
-          
-      //   }
-      //   return formattt;
-      // }
-      // format()
-      
 //--------------Deletet cart------------------------
 function deleteCart(){
   var cartItem = document.querySelectorAll("tbody tr")
