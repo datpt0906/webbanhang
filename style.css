@@ -452,6 +452,10 @@ body {
     margin-left: 10px;
 
 }
+.dathang .spdathang sup {
+   color:red;
+
+}
 
 .dathang .spdathang h6 {
     float: left;
