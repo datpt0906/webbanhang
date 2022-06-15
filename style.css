@@ -723,6 +723,13 @@ body {
 }
 
 /* ==================rebonsive============= */
+@media (min-width: 1399.99px){
+    .menu .nav-item .dropdown-menu .noidungcart_right .cart form {
+    height: 200px;
+    min-width: 800px;
+    overflow: auto;
+}
+}
 @media (max-width: 1399.98px) {
     .spdathang {
         width: 18.6% !important;
@@ -748,6 +755,11 @@ body {
         margin: auto;
         display: block;
     }
+    .menu .nav-item .dropdown-menu .noidungcart_right .cart form {
+    height: 200px;
+    min-width: 600px;
+    overflow: auto;
+}
 }
 
 @media (max-width: 1199.98px) {
@@ -813,6 +825,11 @@ body {
         margin: auto;
         display: block;
     }
+    .menu .nav-item .dropdown-menu .noidungcart_right .cart form {
+    height: 200px;
+    min-width: 500px;
+    overflow: auto;
+}
 
 }
 
@@ -1057,6 +1074,11 @@ body {
     .sanphamkhac-sp .sanphamkhac-sp-1 .sanphamkhac-sp-2 {
         width: 46.5% !important;
     }
+    .menu .nav-item .dropdown-menu .noidungcart_right .cart form {
+    height: 200px;
+    min-width: 300px;
+    overflow: auto;
+}
 
 }
 
@@ -1284,7 +1306,7 @@ body {
 /* .menu .navbar .container-fluid .dropdown-menu .nav-item:click + .dropdown-menu {
     display: block;
 } */
-.noidungcart_right {
+/* .noidungcart_right {
 
     float: right;
     padding-right: 10px;
@@ -1305,7 +1327,7 @@ body {
     width: 100%;
     margin-left: 10px;
     overflow: auto;
-}
+} */
 
 tbody tr td .title {
     margin-left: 10px;
